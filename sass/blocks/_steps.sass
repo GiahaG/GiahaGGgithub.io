@@ -1,0 +1,36 @@
+.steps
+ padding-top: 99px
+ padding-bottom: 103px
+ background-color: #f6f7f9
+ &__title
+  font-size: 30px
+  text-align: center
+  text-transform: uppercase
+  +bold
+  margin-bottom: 90px
+ &-block
+  position: relative
+  z-index: 98
+  display: flex
+  justify-content: space-between
+  &:after
+   content: ''
+   position: absolute
+   width: 1000px
+   height: 2px
+   bottom: 127px
+   left: 90px
+   z-index: -1
+   background-color: #7e7b78
+   opacity: 0.5
+  &__item
+   text-align: center
+  &__title
+   font-size: 18px
+   font-size: italic
+   +bold
+  &__descr
+   display: block
+   font-size: 14px
+   width: 160px
+  &__image

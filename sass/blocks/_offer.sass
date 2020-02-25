@@ -1,0 +1,74 @@
+.offer
+ background-color: #f1f1f1
+ padding-bottom: 121px 0px
+ &-block
+  background: #fff url('../img/offer/form-bg.png') no-repeat center right
+  background-size: contain
+  padding: 80px
+  transform: translateY(-120px)
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+  &_reviews
+    background: #fff url('../imgs/price/form-bg-price.png') no-repeat center right
+    background-size: contain
+    transform: translateY(-220px)
+  &__title
+   font-size: 25px
+   text-transform: uppercase
+   +bold
+  &__descr
+   display: block
+   font-size: 21px
+   color: #000000
+   margin-bottom: 48px
+.form
+ &__offer
+  width: 890px
+ &__row
+  display: flex
+ &__group
+  flex-basis: 33%
+ &__label
+  display: block
+  margin-bottom: 15px
+ &__input
+  width: 99%
+  height: 70px
+  padding-left: 10px
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  margin-bottom: 38px
+  border-right-width: 0px
+  &:last-child
+   border-right-width: 1px
+ &__button
+  border: 1px solid $primary
+  width: 301px
+  font-size: 15px
+  height: 74px
+  text-transform: uppercase
+  color: #ffffff
+  background-color: $primary
+  +bold  
+input[type="checkbox"]
+  display: none
+  &:checked + label::before
+    background-color: $primary
+.checkbox
+  display: none
+  &-label
+    display: flex
+    align-items: center
+    margin-right: 42px
+    margin-bottom: 25px
+    &:hover
+      cursor: pointer
+    &::before
+      content: ''
+      width: 30px
+      height: 30px
+      border: 1px solid #dddddd
+      margin-right: 20px
+
+
+
+

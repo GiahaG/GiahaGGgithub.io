@@ -1,0 +1,39 @@
+.reviews
+ background-color: #f6f7f9
+ padding-top: 99px
+ padding-bottom: 258px
+ &__title
+  font-size: 30px
+  text-align: center
+  text-transform: uppercase
+  margin-bottom: 99px
+  +bold
+ &-block
+  display: flex
+  justify-content: space-between
+  &__item
+   margin-left: 20px
+   text-align: center
+  &__text
+   position: relative
+   width: 330px
+   border-radius: 10px
+   margin-bottom: 20px
+   min-height: 105px
+   padding: 20px 20px
+   background-color: #fff
+   font-size: 15px
+   &::before
+    content: ''
+    height: 10px
+    position: absolute
+    bottom: -30px
+    right: 173px;
+    border: 10px solid transparent
+    border-top: 10px solid #fff
+  &__image
+   border: 2px solid #6a99e9
+   border-radius: 60%
+  &__descr
+   font-size: 14px
+   +bold

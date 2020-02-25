@@ -1,0 +1,76 @@
+.catalog
+ background-color: #f5f6f8
+ padding: 100px 0px
+ &__title
+  text-align: center
+  margin-bottom: 100px
+  font-size: 30px
+  color: #000000
+  text-transform: uppercase
+  +bold
+ &-block
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &__item
+   max-width: 570px
+   height: 130px
+   position: relative
+   box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1)
+   margin-bottom: 30px
+   overflow-y: hidden
+   &:hover
+    .catalog-block__buttons
+      transform: translateY(0)
+      opacity: 1
+  &__buttons
+   display: flex
+   position: absolute
+   bottom: 0px
+   right: 0px
+   transition: 0.2s
+   opacity: 0
+   transform: translateY(100%)
+  &__tag
+   position: absolute
+   top: 10px
+   left: 10px
+   padding: 10px
+   font-size: 12px
+   background-color: rgba(#507fe1, 0.6)
+   text-transform: uppercase
+   color: #fff
+ &__button
+  &_try
+   padding: 10px
+   font-size: 11px
+   color: $primary
+   text-transform: uppercase
+   border: none
+   background-color: #fff
+  &_delivery
+   border: none
+   background-color: #6a99e9
+   color: #ffffff
+   font-size: 11px
+   text-transform: uppercase
+  &_like
+   border: none
+   background-color: $primary
+  &_showall
+   margin: auto
+   display: block
+   padding: 25px
+   font-size: 16px
+   text-transform: uppercase
+   color: #ffffff
+   background-color: $primary
+   border: 1px solid $primary
+   margin-top: 31px
+   +bold
+ &__last-text
+  display: block
+  font-size: 16px
+  text-align: center
+  margin-top: 24px
+ 

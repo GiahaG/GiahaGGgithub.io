@@ -1,0 +1,67 @@
+.navbar
+ position: fixed
+ width: 100%
+ background-color: #fff
+ z-index: 99
+ &__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &__icon
+  margin-right: 10px
+  &:hover
+  cursor: pointer
+  &:focus
+  outline: none
+ &__title
+  display: block
+  margin-top: 0px
+  margin-bottom: 0px
+  font-size: 20px
+  text-transform: uppercase
+  +bold
+ &__descr
+  font-size: 14px
+ &__contacts
+  text-align: right
+ &__phone
+  text-decoration: none
+  display: block
+  font-size: 19px
+  color: $text-color-light
+  +bold
+ &__button-o
+  padding: 17px 22px
+  border: 2px solid #507fe1
+  font-size: 12px
+  text-transform: uppercase 
+  background-color: #fff
+  color: #507fe1
+  +bold
+ &__menu
+   height: 82px
+.menu
+ position: fixed
+ z-index: 0
+ top: 80px
+ left: 0
+ width: 100%
+ padding: 16px 0
+ background-color: $primary
+ color: #ffffff
+ transition: 0.2s
+ transform: translateY(-200%)
+ opacity: 0
+ &_active
+   z-index: 99
+   transform: translateY(0)
+   opacity: 1
+ &__nav
+   display: flex
+   justify-content: space-around
+   background-color: $primary
+ &__active
+   font-size: 17px
+   text-transform: uppercase
+   text-decoration: none
+   color: #fff

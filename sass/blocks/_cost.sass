@@ -1,0 +1,41 @@
+.cost
+ &__title
+  font-size: 26px
+  text-transform: uppercase
+  text-align: center
+  +bold
+  margin-bottom: 99px
+ &-card
+  background-color: #fff
+  position: relative
+  margin-bottom: 30px
+  &__pricetag
+   display: flex
+   align-items: center
+   justify-content: space-between
+  &__title
+   font-size: 15px
+   padding-left: 20px
+  &__value
+   padding-right: 21px
+   font-size: 15px
+   +bold
+  &__button
+   text-align: center
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3)
+   position: absolute
+   z-index: -1
+   bottom: 0
+   left: 0
+   width: 100%
+   background-color: #fff
+   height: 80px
+   padding: 0px
+  &:hover
+   .cost-card__button
+    z-index: 99
+    bottom: -75px
+ &-block
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
